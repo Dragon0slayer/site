@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт - Мої проєкти</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="square"></div>
+        <h1>Мої роботи</h1>
+        <h2>Посилання на проєкти та розробки</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Info.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Contacts</a></li>
+            <li><a href="projects.html" class="active">My projects</a></li>
+        </ul>
+
+        <form class="login-form" onsubmit="return false;">
+            <input type="text" placeholder="Login" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+    </nav>
+
+    <main>
+        <section class="projects">
+            <h3>Мої ресурси</h3>
+            <div class="project-card">
+                <h4>GitHub</h4>
+                <p>Тут я зберігаю вихідний код своїх проєктів із Основ програмування.</p>
+                <a href="https://github.com/Dragon0slayer" target="_blank" class="button">Перейти на GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h4>Google Colab</h4>
+                <p>Тут розміщено мої роботи з Python із Алгоритмів та Технологій розробки ПЗ.</p>
+                <a href="https://drive.google.com/drive/folders/1dUh3CgwOk9aAJCymFmuOofoh71zhEg8h?usp=sharing" target="_blank" class="button">Відкрити Colab</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мій сайт. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
