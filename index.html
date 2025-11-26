@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт - Головна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="square"></div>
+        <h1>Мій сайт</h1>
+        <h2>Запрошую на сайт</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Info.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Contacts</a></li>
+            <li><a href="projects.html">My projects</a></li>
+        </ul>
+
+        <form class="login-form" onsubmit="return false;">
+            <input type="text" placeholder="Login" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+    </nav>
+
+    <main>
+        <p>Сайт студента ТФК ЛНТУ 22-ІСТ</p>
+        
+        <form class="comment-form" onsubmit="handleComment(event)">
+            <p>
+                <input type="text" name="author" placeholder="Ім'я" required>
+            </p>
+            <p>
+                <input type="email" name="email" placeholder="Пошта" required>
+            </p>
+            <p>
+                <textarea name="comment" cols="48" rows="8" placeholder="Ваш коментар" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Надіслати">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мій сайт. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        function handleComment(event) {
+            event.preventDefault();
+            alert('Дякуємо за ваш коментар! (це демо-версія, дані не зберігаються)');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
